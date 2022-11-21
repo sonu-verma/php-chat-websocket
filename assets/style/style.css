@@ -1,0 +1,71 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: Sagoe UI historic, Sagoe UI,helvitica,sans-serif,arial;
+}
+
+.chat-left{
+	
+}
+.chat-center{
+	
+
+}
+.chat-right{
+
+}
+
+.user-msg{background: #b7ff4ecc;}
+.fb-li-active{background: #e9f3ff;}
+.fb-bg{background: #0084FF;}
+
+.fb-bg:hover{background: #0173DD;}
+
+.fb-color{color: #0084FF;}
+.fb-body-bg{
+	background: #f0f2f5;
+}
+
+.login-input{
+	font-size: 17px;
+	padding: 14px 16px;
+	width: 330px;
+	border: 1px solid #dddfe2;
+	border-radius: 6px;
+}
+
+.fb-green{
+	background: #42b72a;
+}
+.fb-green:hover{
+	background: #4fa03e;
+}
+
+.left-overflow li div{
+	overflow: hidden;
+}
+
+/*==========CHATemojionearea============*/
+.chat-box{
+	cursor: pointer;
+}
+.hover-menu{
+	display: none;
+}
+.chat-box:hover > div.hover-menu{
+	display: flex;
+} 
+.emojionearea{
+	background: none !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+.emojionearea-button-open{
+	 color: #0084FF !important; 
+}
+
+.emojionearea-button-close{
+		 color: #0084FF !important; 
+
+}
