@@ -1,0 +1,7 @@
+#Ignore Folder
+/vendor/
+/project-files+-for-fb-messenger/
+/.idea/
+
+#ignore file
+extra.php
