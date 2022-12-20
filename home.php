@@ -1,6 +1,7 @@
 <?php
     require 'core/init.php';
     $commonObj->isLoggedIn();
+    $messengerObj->redirectToMessage();
 //    $data = $commonObj->getTableData('users');
 //    var_dump($data);
 ?>
@@ -58,7 +59,7 @@
 
                                     </div>
                                     <div id="recentMessages">
-                                        <!-- RECENT-MESSAGES -->
+                                        <?php $messengerObj->getRecentMessages(); ?>
                                     </div>
                                 </ul>
                             </div>

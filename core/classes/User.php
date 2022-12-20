@@ -1,10 +1,12 @@
 <?php
 
+
     class User{
-        public $db,$userId;
+        public $db,$userId,$common;
 
         public function __construct(){
             $db = new  DB;
+            $this->common = new Common();
             $this->db = $db->connect();
             $this->userId = $this->userID();
         }
@@ -28,5 +30,10 @@
             $stmt->bindValue(2, $this->userId,PDO::PARAM_INT);
             $stmt->execute();
             return $stmt->fetchAll(PDO::FETCH_OBJ);
+        }
+
+        public function userDataByUsername($username){
+            $userData = $this->common->getTableData('users', ['username' => $username]);
+            return $userData;
         }
     }

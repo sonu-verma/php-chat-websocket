@@ -1,3 +1,7 @@
+//to see last query
+$stmt->debugDumpParams()
+
+
 User Table:
 userId
 username

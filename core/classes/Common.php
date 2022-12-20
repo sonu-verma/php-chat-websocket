@@ -1,5 +1,4 @@
 <?php
-
 class Common{
     public $db;
 
